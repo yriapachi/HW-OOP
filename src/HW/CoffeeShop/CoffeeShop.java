@@ -47,7 +47,7 @@ public class CoffeeShop {
                 case 2:
                     System.out.println("Database or File? (D/F)");
                     char answer2 = sc.next().charAt(0);
-                    sc.nextLine();
+                    sc.nextLine();  // Consume newline
                     switch (answer2) {
                         case 'D':
                             DBReader.dbRead(conn);
@@ -88,5 +88,7 @@ public class CoffeeShop {
                     break;
             }
         }
+
+        sc.close();
     }
 }
