@@ -3,8 +3,8 @@ package HW.eShop;
 import java.util.Scanner;
 
 public class Audiobooks extends Book {
-    protected double duration;
-    protected String narrator;
+    protected static double duration;
+    protected static String narrator;
 
     public Audiobooks(int isbn, String title, double price, String author,
                       double duration, String narrator) {

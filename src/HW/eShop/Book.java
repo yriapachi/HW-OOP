@@ -2,10 +2,10 @@ package HW.eShop;
 import java.util.ArrayList;
 
 public abstract class Book {
-    protected int isbn;
-    protected String title;
-    protected double price;
-    protected String author;
+    protected static int isbn;
+    protected static String title;
+    protected static double price;
+    protected static String author;
 
     static ArrayList<Book> books = new ArrayList<Book>();
 
@@ -21,6 +21,7 @@ public abstract class Book {
     public abstract void addBook();
 
     public static void displayProducts(){
+
         for (Book book : books){
             System.out.println(book);
         }

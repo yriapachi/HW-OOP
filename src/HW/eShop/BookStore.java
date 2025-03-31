@@ -2,12 +2,15 @@ package HW.eShop;
 
 import java.util.Scanner;
 
-public class BookStore {
+
+public class BookStore{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         Book printed = new Printed(1, "aaa", 0.0, "a", "aa", 0, "a", 0);
         Book digital = new Digital(2, "bbb", 0.0, "b", 0.0);
         Book audiobooks = new Audiobooks(3, "ccc", 0.0, "c", 0.0, "c");
+
 
         char ans;
         String typeAnswer;
@@ -40,4 +43,6 @@ public class BookStore {
 
         Book.displayProducts();
     }
-}
+
+
+    }

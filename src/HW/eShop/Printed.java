@@ -3,10 +3,10 @@ package HW.eShop;
 import java.util.Scanner;
 
 public class Printed extends Book {
-    protected String type; //hardcover or paperback
-    protected int pages;
-    protected String publisher;
-    protected int availableCopies;
+    protected static String type; //hardcover or paperback
+    protected static int pages;
+    protected static String publisher;
+    protected static int availableCopies;
 
 
     public Printed(int isbn, String title, double price, String author,
