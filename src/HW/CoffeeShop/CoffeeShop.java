@@ -77,7 +77,6 @@ public class CoffeeShop {
 
                 case 0:
                     System.out.println("Goodbye!");
-                    exit = true;
                     break;
 
                 default:
