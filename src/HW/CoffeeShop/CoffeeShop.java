@@ -16,9 +16,6 @@ public class CoffeeShop {
             System.out.println("Error: Could not establish a connection to the database.");
             return;
         }
-
-        boolean exit = false;
-        while (!exit) {
             System.out.println("Choose an option: ");
             System.out.println("1. Add Order");
             System.out.println("2. View Orders on a specific date");
@@ -47,7 +44,7 @@ public class CoffeeShop {
                 case 2:
                     System.out.println("Database or File? (D/F)");
                     char answer2 = sc.next().charAt(0);
-                    sc.nextLine();  // Consume newline
+                    sc.nextLine(); 
                     switch (answer2) {
                         case 'D':
                             DBReader.dbRead(conn);
@@ -80,7 +77,6 @@ public class CoffeeShop {
 
                 case 0:
                     System.out.println("Goodbye!");
-                    exit = true;
                     break;
 
                 default:
@@ -88,7 +84,4 @@ public class CoffeeShop {
                     break;
             }
         }
-
-        sc.close();
-    }
 }
